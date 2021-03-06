@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace MI_APP
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            var ingresar = double.Parse(Ingresar.Text);
+
+
+            var b = 4;
+
+            if (ingresar > 0 && ingresar <=1000000)
+            {
+
+                string mystring = Convert.ToString(ingresar);
+                mystring = mystring.Remove(mystring.Length - 1);
+                int resultado = Convert.ToInt32(mystring) - Convert.ToInt32(b);
+                Resultado.Text = resultado.ToString();
+
+            }
+
+        }
+    }
+}
