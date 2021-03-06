@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace LA_FECHA
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+            private void Button_Clicked(object sender, EventArgs e)
+        {
+                var dia = double.Parse(Dia.Text);
+                
+
+                var b = 365;
+             
+       
+                  {
+                          
+                          string mystring = Convert.ToString(dia);
+                          int resultado = Convert.ToInt32(dia) - Convert.ToInt32(b);
+                          Resultado.Text = resultado.ToString();
+
+                  } 
+               
+
+            
+
+        }
+    }
+        
+} 
+
