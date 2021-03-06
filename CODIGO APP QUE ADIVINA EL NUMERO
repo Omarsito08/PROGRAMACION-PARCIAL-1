@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MI_APP.MainPage">
+
+    <StackLayout  VerticalOptions="Center"
+                  HorizontalOptions="Center">
+        <!--Place new controls here-->
+        <Label Text="TU PIENSA UN NUMERO Y YO TE DIGO CUAL ES"/>
+        <Label Text="Ahora bien multiplica por 2 tu numero:"/>
+        <Label Text="Genial, ahora a eso sumale 8:"/>
+        <Label Text="Super, ahora multiplica ese resultado por 5:"/>
+        <Label Text="Y Ahora ingresa el resultado"/>
+        <Entry Placeholder="Escribe el numero" x:Name="Ingresar"/>
+        <Entry Placeholder="EL NUMERO QUE PENSASTE ES" x:Name="Resultado"/>
+        <Button Text="RESULTADO" Clicked="Button_Clicked"/>
+
+
+
+    </StackLayout>
+
+</ContentPage>
