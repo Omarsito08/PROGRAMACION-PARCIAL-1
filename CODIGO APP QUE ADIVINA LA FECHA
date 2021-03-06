@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LA_FECHA.MainPage">
+
+    <StackLayout VerticalOptions="Center"
+                  HorizontalOptions="Center">
+        <!--Place new controls here-->
+        <Label Text="PIENSA LA FECHA EN QUE NACISTE"/>
+        <Label Text="AHORA BIEN MULTIPLICA ESO POR 20"/>
+        <Label Text="GENIAL A ESE RESULTADO LE DEBES SUMAR 73"/>
+        <Label Text="SUPER, AHORA TIENES QUE MULTIPLICARLO POR 5:"/>
+        <Label Text="Y POR ULTIMO, SUMALE EL MES QUE NACISTE:"/>
+        <Label Text="INGRESA TU RESULTADO"/>
+        <Entry Placeholder="Escribe el numero" x:Name="Dia"/>
+        <Entry Placeholder="LA FECHA DE TU CUMPLEAÑOS ES" x:Name="Resultado"/>
+        <Button Text="RESULTADO" Clicked="Button_Clicked"/>
+       
+    </StackLayout>
+
+</ContentPage>
